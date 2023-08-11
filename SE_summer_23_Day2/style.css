@@ -1,0 +1,94 @@
+#par2{color:bisque;}
+h2.par1{background-color: honeydew;}
+bgp.{color: brown;}
+
+/* css universal selector
+
+*{text-align: center;}
+
+*/
+
+h2.par1, #par2, h1{
+    text-align: center;
+}
+
+/* combinator selector--*/
+
+/*
+li a{background-color: coral;}
+div + p{background-color: pink;}
+div > p{color: orange;}
+div ~ p{color: purple;}
+*/
+
+/* attribute selector */
+
+a[href*="mailto"]{
+    background-color: aqua;
+}
+
+/*pseudo class selector...*/
+.qcclink:visited{
+    background-color: chartreuse;}
+
+    .qcclink:hover{
+        background-color: teal;
+    }
+    .qcclink:active{
+        background-color: darkred;
+    }
+    .hiddenPar{
+        color: brown;
+        background-color: antiquewhite;
+        display: none;
+    }
+    .tooltipDiv:hover .hiddenPar{
+        display: block;
+    }
+    /*...text and font properties..*/
+    .subtitle{font-family: broadway;}
+    .intro{font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
+    .author{font-size: 20px; font-weight: 800; font-style: italic;}
+    .shadow{
+        width: 300px;
+        height: 100px;
+        text-align: center;
+        background-color: aquamarine;
+        box-shadow: 10px 20px 10px orangered;
+    }
+    .hoverMe{
+        background-color: aquamarine;
+        color: azure;
+        display: inline-block;
+        width: 30%;
+        text-align: center;
+        padding: 1em;
+        border-radius: 20px;
+    }
+    .hoverMe:hover{
+        box-shadow: 0px 0px 5px 1px gainsboro;
+    }
+
+    /*---Cards---*/
+
+    .card{
+        width: 40%;
+        box-shadow: 0px 0px 4px 2px gray, 2px 4px 1px wheat;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+    .imgCard{
+        width: 100%;
+    }
+    .cardInfo{text-align: center;}
+    .card.card:hover{box-shadow: 0px 1px 3px 2px darkred;}
+
+    /*--- box model properties---*/
+    .box{
+        background-color: aquamarine;
+    border:10px orange groove;
+    margin-top: 5em;
+    margin: 2em;
+    padding-left: 3em;
+    padding: 2em;
+    }

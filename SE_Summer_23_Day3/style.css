@@ -1,0 +1,44 @@
+
+html{scroll-behavior: smooth;}
+img{width: 100%; display: block;}
+/*-- Card--*/
+.card{
+    width: 20%;
+    box-shadow: 0px 1px 5px 1px grey;
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 2% 0%;
+    transition: ease400ms;   
+}
+.card:hover{
+    box-shadow: 0px 0px 5px 1px navy;
+    transform: scale(1.01);
+
+}
+.cardContent{
+padding: 0.05em 0.08em;
+}
+.cardContent p:nth-child(1){
+    color: coral;
+    font-size: 1.5em;
+    font-weight: 800;
+
+}
+.cardContent p:nth-child(2){
+    color: darkblue;
+
+}
+.cardContainer{
+    display: flex;
+    width: 90%;
+    margin: 5em auto;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+}
+/*--Images Card--*/
+.imgCard{
+    width: 48%;
+    margin-bottom: 3em;
+    box-shadow: 1px 1px 5px rgb(100,100,100);
+}
