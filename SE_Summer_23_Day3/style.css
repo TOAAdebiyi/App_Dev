@@ -1,14 +1,14 @@
-
+*{box-sizing: border-box;}
 html{scroll-behavior: smooth;}
 img{width: 100%; display: block;}
 /*-- Card--*/
 .card{
-    width: 20%;
+    width: 200px;
     box-shadow: 0px 1px 5px 1px grey;
     border-radius: 5px;
     overflow: hidden;
     margin: 2% 0%;
-    transition: ease400ms;   
+    transition: ease 400ms;   
 }
 .card:hover{
     box-shadow: 0px 0px 5px 1px navy;
@@ -38,7 +38,47 @@ padding: 0.05em 0.08em;
 }
 /*--Images Card--*/
 .imgCard{
-    width: 48%;
-    margin-bottom: 3em;
+    width: 45%;
+    margin-bottom: 3em auto;
+    border-radius: 5px;
     box-shadow: 1px 1px 5px rgb(100,100,100);
+    overflow: hidden;
+    position: relative;
+}
+
+.imgCardContent{
+    position: absolute;
+    background-color: rgba(rgba(200, 100, 50, 0.7), green, blue, alpha);
+    top: 20%;
+    bottom: 20%;
+    left: 30%;
+    right: 30%;
+    text-align: center;
+}
+
+.p1_imgCardContent{
+    color: darkgreen;
+    font-size: 2em;
+}
+.imgCardContent2{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    background-color: aquamarine;
+}
+.p1_imgCardContent2{
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+font-weight: 400;
+margin-top: 2em;
+
+}
+
+.imgCard:hover .p1_imgCardContent2{
+    color: cadetblue;
+    font-size: 2.1em;
+
+}
+.imgCard:hover{
+    box-shadow: none;
+    border: ridge 2px orangered;
 }
