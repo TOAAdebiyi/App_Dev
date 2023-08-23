@@ -59,6 +59,7 @@ padding: 0.05em 0.08em;
 .p1_imgCardContent{
     color: darkgreen;
     font-size: 2em;
+    
 }
 .imgCardContent2{
     position: absolute;
@@ -82,3 +83,50 @@ margin-top: 2em;
     box-shadow: none;
     border: ridge 2px orangered;
 }
+
+/*  Simple Element Animation */
+
+.square{
+    width: 200px;
+    height: 200px;
+    background-color: aquamarine;   
+}
+
+.square:hover{
+    border-radius: 50%;
+    background-color: darkorchid;
+}
+/*  Zoom Animation */
+
+.zoomContainer{
+    width: 300px;
+    position: relative;
+    margin: 5em;
+}
+.zoomMSG, .slideMSG{
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    right: 0%;
+    left: 0%;
+    background-color: rgba(200, 100, 50, 0.7);
+    font-size: 2em;
+    color: aliceblue;
+    text-align: center;
+    padding-top: 20%;
+    transform: scale(0);
+    transition: ease 800ms;
+}
+.zoomMSG{
+    transform: scale(0);
+}
+.zoomContainer:hover .zoomMSG{
+    transform: scale(1);
+}
+
+/*  Slide Animation */
+
+.slideMSG:hover{
+    transform: translateX(300px);
+}
+
