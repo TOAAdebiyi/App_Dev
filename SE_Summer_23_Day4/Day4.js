@@ -11,9 +11,9 @@ for(initialNum; initialNum>=0; initialNum--){
     }
 }
 console.log('---Example 6---')
-let cars =[BMW, Tesla, Bentley, Ross_Royce, Farrari, Porches, Mercedes_Benz]
+let cars =['BMW', 'Tesla', 'Bentley', 'Ross_Royce', 'Farrari', 'Porches', 'Mercedes_Benz']
 for(let eachCar of cars){
-    console.log('eachCar')
+    console.log(eachCar)
 }
 console.log('---Example 8---')
 
@@ -33,25 +33,29 @@ while(i>=0){
 }
 
 let userNum = parseInt(prompt('Enter a Number'))
-let checkUserNum = isnan(userNum)
+let checkUserNum = isNaN(userNum)
 while(checkUserNum){
     userNum = parseInt(prompt("you didn't enter a number!.. Please Try Again"))
-    checkUserNum = isnan(userNum)
+    checkUserNum = isNaN(userNum)
 }
-
-console.log('----Example 11---')
 
 console.log(`you entered ${userNum}`)
 
-for(let counter = 5; counter>=10; counter --){
+console.log('----Example 11---')
+
+for(let counter = 5; counter>=-10; counter --){
     console.log(`Counting... ${counter}`)
-    if(counter===3){
+    if(counter===-3){
         continue
+    }
+    else{
+        console.log(`Counting... = ${counter}`)
     }
 }
 
 console.log('---Example 12----')
-for(let y = 10; y<=10; y++){
+
+for(let y = -10; y<=10; y++){
     if(y%2!==0){
         continue
     }
@@ -68,7 +72,7 @@ console.log('----Example 2-------')
 
 function printCount(){
     console.log('---Example 2---')
-    for(let n = 3; n>=0; n--1){
+    for(let n = 3; n>=0; n-=1){
         console.log(n)
 
     }
@@ -81,11 +85,18 @@ function greeting(name){
 }
 function greet(firstName, lastName){
     console.log("----Example 5---")
-    console.log(`Hello ${firstName} ${lastName[0]}`)
+    console.log(`Hello ${firstName} ${lastName[0].toUpperCase()}`)
 }
 
 function doubleNumber(number){
     console.log('---Example 6----')
-    number =2
+    
+     number *= 2
     return number
+    }
+    if(number = null){
+        console.log(`please enter a number`)
+        else{
+            console.log('GoodBye...!')
+        }  
 }

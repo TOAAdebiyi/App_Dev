@@ -3,28 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=<device-width2>h>, initial-scale=1.0">
-    <title>Terence O Adebiyi, Adv SE Summer23</title>
+    <title>Terence_O_Adebiyi_Adv_SE_Summer_23_JS</title>
 </head>
 <body>
-    <h2>Enter Your Name</h2>
+    <h2>Terence O Adebiyi</h2>
     <script>
         console.log("Terence Adebiyi")
         let animal = "cat"
         let age = 23
         let booli = true
-        let var = ""
+        let var1 = ""
         let var2 = null
         let var3
         // promt method
-        let mgs =prompt("enter your name")
+        let name =prompt("enter your name")
         let num1 = prompt("Enter your phone number")
-        let num2 = parseInt(prompt("Enter a number"))
         num1 = parseInt(num1)
         let num2 = parseInt(prompt("enter number 2"))
         // check if num1 and num2 is a number //
 
-        let checknum1 = isnan(num1)
-        let checknum2 = isnan(num2)
+        let checknum1 = isNaN(num1)
+        let checknum2 = isNaN(num2)
         if(checknum1){
             console.log("you didn't enter a number")
             num1=0
@@ -33,11 +32,13 @@
             console.log("you didn't enter a number 1!")
         }
         //display value of a variable
+
         console.log("Number 1 =", num1, "number 2 =", num2)
         console.log("Number 1 =" + num1 + "number 2 =" + num2)
         console.log(`Number 1 =${num1} number = ${num2}`)
         console.log(`welcome to JS ${name}`)
         // Array--//
+
         let fruits =["orange","Apples","Mangos","peaches"]
         console.log(`The second item in the array fruits is ${fruits[1]}`)
         let meals =['breakfast',['egg','bread','coffee'],'lunch',['fish','chicken','beef','salads']]
@@ -111,7 +112,7 @@
 
     </script>
 
-    <script>Day4.js</script>
+    <script src="Day4.js"></script>
 
 </body>
 </html>
