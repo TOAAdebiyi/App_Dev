@@ -1,6 +1,5 @@
-
 const fs = require('fs')
-// importing the http module 
+// importing the http module
 
 const http= require('http')
 
@@ -71,5 +70,4 @@ readStream.on('end', ()=>{
 
 const writestream = fs.createWriteStream('write.txt')
 writestream.write('streaming text content...', 'utf-8')
-
-/*
+*/
